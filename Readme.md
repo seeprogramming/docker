@@ -5,7 +5,7 @@
 | Command                                | Use                                                                                                                                             | Example                                                  |
 | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | docker build .                         | Create a docker image from the 'Dockerfile' inside project folder                                                                               | -                                                        |
-| docker run -p port:port image_id       | Use the image_id generated from `docker build .` command to run the container                                                                   | docker run -p 3000:3000 c1ae0f4d8dd7                     |
+| docker run -p port:port image_id       | Use the image_id generated from `docker build .` command to run the container                                                                   | docker run -p 3000:80 c1ae0f4d8dd7                       |
 | docker ps                              | List all running docker containers / processes (`ps - processes`)                                                                               |                                                          |
 | docker stop container_name             | Stop the docker container using the name of the container                                                                                       | docker stop laughing_taussig                             |
 | docker ps -a                           | Lists all containers                                                                                                                            |                                                          |
@@ -21,6 +21,8 @@
 | docker rmi imageId                     | Delete specific image                                                                                                                           | docker rmi 1ccdd95065ec                                  |
 | docker run -p port -d --rm containerId | removes container after being stopped                                                                                                           | docker run -p 3000:80 -d --rm 1c7f4cb9788                |
 | docker image inspect imageId           | inspected the docker image                                                                                                                      | docker image inspect 1c7f4cb9788b                        |
+| docker cp localpath containerId:/path  | Copying files into container                                                                                                                    | docker cp dummy/. mystifying_pike:/test                  |
+| docker cp containerId:/path localpath  | Copying files from container to local                                                                                                           | docker cp mystifying_pike:/test/text.txt dummy           |
 
 ## 🖼️ **What is a Docker Image?**
 
