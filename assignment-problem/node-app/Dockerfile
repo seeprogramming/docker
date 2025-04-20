@@ -1,4 +1,4 @@
-FROM node:12
+FROM node
 
 WORKDIR /app
 
@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . /app
 
-EXPOSE 80
+EXPOSE 3000
 
 CMD ["node", "server.js"]
