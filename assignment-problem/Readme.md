@@ -19,10 +19,9 @@
 
 ### My Solution for both apps ::
 
-TASK 1 :: Create appropriate images for both apps (two separate images!).
+`TASK 1 :: Create appropriate images for both apps (two separate images!).`
 
-TASK 2 :: Launch a container for each created image, making sure,
-that the app inside the container works correctly and is usable.
+`TASK 2 :: Launch a container for each created image, making sure, that the app inside the container works correctly and is usable.`
 
 `node-app`
 
@@ -80,8 +79,7 @@ Run the application in interactive mode to interact with it.
 docker run -it imageId
 ```
 
-TASK 3 :: Re-create both containers and assign names to both containers.
-Use these names to stop and restart both containers.
+`TASK 3 :: Re-create both containers and assign names to both containers. Use these names to stop and restart both containers.`
 
 `node-app`
 
@@ -111,8 +109,7 @@ Run app in interactive mode
 docker run -it --name pythonappit pythonapp
 ```
 
-TASK 4 :: Clean up (remove) all stopped (and running) containers,
-clean up all created images.
+`TASK 4 :: Clean up (remove) all stopped (and running) containers, clean up all created images.`
 
 ```sh
 docker rm containerId
@@ -122,10 +119,9 @@ docker rm containerId
 docker rmi imageId
 ```
 
-TASK 5 :: Re-build the images - this time with names and tags assigned to them.
+`TASK 5 :: Re-build the images - this time with names and tags assigned to them.`
 
-TASK 6 :: Run new containers based on the re-built images, ensuring that the containers
-are removed automatically when stopped.
+`TASK 6 :: Run new containers based on the re-built images, ensuring that the containers are removed automatically when stopped.`
 
 `node-app`
 
