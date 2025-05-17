@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
-
+console.log('HELLO world');
 app.use(express.static('public'));
 app.use('/feedback', express.static('feedback'));
 
